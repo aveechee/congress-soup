@@ -10,7 +10,7 @@ class LinkScraperSpider(scrapy.Spider):
     
     custom_settings={"FEEDS": {"session_links.csv": {"format": "csv"}}}
     
-    allowed_domains = ['https://www.congress.gov/roll-call-votes']
+    allowed_domains = ['congress.gov']
     start_urls = ['https://www.congress.gov/roll-call-votes/']
 
     def parse(self, response):
